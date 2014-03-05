@@ -1,0 +1,34 @@
+using System;
+
+
+class Practica2
+{
+public static void Main(string[] args)
+{
+
+double producto1, producto2, producto3, subtotal1, subtotal2, subtotal3, total;
+
+Console.WriteLine("introduce el precio del primer producto");
+producto1=double.Parse(Console.ReadLine());
+
+Console.WriteLine("introduce el precio del segundo producto");
+producto2=double.Parse(Console.ReadLine());
+
+Console.WriteLine("introduce el precio del tercer producto");
+producto3=double.Parse(Console.ReadLine());
+
+subtotal1= producto1 * 0.16 + producto1;
+Console.WriteLine("El total con iva del producto:" + subtotal1);
+
+subtotal2= producto2 * 0.16 + producto2;
+Console.WriteLine("El total con iva del producto:" + subtotal2);
+
+subtotal3= producto3 * 0.16 + producto3;
+Console.WriteLine("El total con iva del producto:" + subtotal3);
+
+
+total= producto1 + producto2 + producto3;
+Console.WriteLine("El total de los productos:" + total);
+
+	}
+}
